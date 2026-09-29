@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Exam Timetable</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h2>Exam Timetable</h2>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="student.html">Dashboard</a>
+        <a href="#" onclick="logout()">Logout</a>
+    </nav>
+
+</header>
+
+<section class="timetable-section">
+
+    <h1>Examination Timetable</h1>
+
+    <div class="filter">
+
+        <select id="filterYear">
+
+            <option value="all">All Years</option>
+
+            <option>First Year</option>
+            <option>Second Year</option>
+            <option>Third Year</option>
+            <option>Final Year</option>
+
+        </select>
+
+        <select id="filterSection">
+
+            <option value="all">All Sections</option>
+
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+
+        </select>
+
+        <button onclick="filterTimetable()">
+            Search
+        </button>
+
+    </div>
+
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>Sr. No.</th>
+                <th>Subject</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Year</th>
+                <th>Section</th>
+                <th>Room</th>
+                <th>Action</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody id="examTable">
+
+        </tbody>
+
+    </table>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

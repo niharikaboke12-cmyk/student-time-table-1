@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h2>Student Dashboard</h2>
+
+    <nav>
+        <a href="student.html">Dashboard</a>
+        <a href="timetable.html">My Timetable</a>
+        <a href="#" onclick="logout()">Logout</a>
+    </nav>
+</header>
+
+<section class="dashboard">
+
+    <h1>Welcome, <span id="studentName"></span></h1>
+
+    <div class="student-info">
+
+        <p>
+            <strong>Email:</strong>
+            <span id="studentEmail"></span>
+        </p>
+
+        <p>
+            <strong>Year:</strong>
+            <span id="studentYear"></span>
+        </p>
+
+        <p>
+            <strong>Section:</strong>
+            <span id="studentSection"></span>
+        </p>
+
+    </div>
+
+    <a href="timetable.html" class="btn">
+        View My Timetable
+    </a>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

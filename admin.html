@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h2>Admin Dashboard</h2>
+
+    <nav>
+        <a href="admin.html">Dashboard</a>
+        <a href="add-exam.html">Add Exam</a>
+        <a href="timetable.html">Timetable</a>
+        <a href="#" onclick="logout()">Logout</a>
+    </nav>
+</header>
+
+<section class="dashboard">
+
+    <h1>Welcome, Administrator</h1>
+
+    <div class="cards">
+
+        <div class="card">
+            <h2 id="totalExams">0</h2>
+            <p>Total Exams</p>
+        </div>
+
+        <div class="card">
+            <h2>4</h2>
+            <p>Total Years</p>
+        </div>
+
+        <div class="card">
+            <h2>3</h2>
+            <p>Total Sections</p>
+        </div>
+
+    </div>
+
+    <br>
+
+    <a href="add-exam.html" class="btn">
+        Add New Exam
+    </a>
+
+    <a href="timetable.html" class="btn">
+        View Timetable
+    </a>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
