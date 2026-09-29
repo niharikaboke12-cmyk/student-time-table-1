@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Room Allocation</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Exam Room Allocation</h1>
+
+    <form id="allocationForm">
+
+        <label>Select Exam</label>
+
+        <select id="examSelect" required>
+            <option value="">Select Exam</option>
+        </select>
+
+        <br><br>
+
+        <label>Select Room</label>
+
+        <select id="roomSelect" required>
+            <option value="">Select Room</option>
+        </select>
+
+        <br><br>
+
+        <button type="submit">
+            Allocate Room
+        </button>
+
+    </form>
+
+    <h2>Room Allocations</h2>
+
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>Subject</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Room</th>
+                <th>Action</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody id="allocationTable"></tbody>
+
+    </table>
+
+</div>
+
+<script src="js/room-allocation.js"></script>
+
+</body>
+
+</html>

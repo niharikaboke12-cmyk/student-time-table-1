@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Room Management</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <h1>🏫 Room Management</h1>
+
+    <div class="container">
+
+        <h2>Add Exam Room</h2>
+
+        <form id="roomForm">
+
+            <input
+                type="text"
+                id="roomNumber"
+                placeholder="Room Number"
+                required
+            >
+
+            <input
+                type="text"
+                id="building"
+                placeholder="Building Name"
+                required
+            >
+
+            <input
+                type="number"
+                id="capacity"
+                placeholder="Room Capacity"
+                min="1"
+                required
+            >
+
+            <select id="status">
+                <option value="Available">Available</option>
+                <option value="Unavailable">Unavailable</option>
+            </select>
+
+            <button type="submit">
+                ➕ Add Room
+            </button>
+
+        </form>
+
+
+        <h2>Room List</h2>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Room No.</th>
+                    <th>Building</th>
+                    <th>Capacity</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="roomTable">
+            </tbody>
+
+        </table>
+
+        <br>
+
+        <a href="dashboard.html">
+            <button>⬅ Back to Dashboard</button>
+        </a>
+
+    </div>
+
+    <script src="js/room.js"></script>
+
+</body>
+
+</html>

@@ -1,89 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Exam Timetable</title>
-
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
-<header>
+<div class="container">
 
-    <h2>Exam Timetable</h2>
+    <h1>Exam Timetable Management</h1>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="student.html">Dashboard</a>
-        <a href="#" onclick="logout()">Logout</a>
-    </nav>
+    <div class="form-box">
 
-</header>
+        <label>Subject Name</label>
+        <input type="text" id="subject" placeholder="Enter subject name">
 
-<section class="timetable-section">
-
-    <h1>Examination Timetable</h1>
-
-    <div class="filter">
-
-        <select id="filterYear">
-
-            <option value="all">All Years</option>
-
-            <option>First Year</option>
-            <option>Second Year</option>
-            <option>Third Year</option>
-            <option>Final Year</option>
-
+        <label>Branch</label>
+        <select id="branch">
+            <option value="">Select Branch</option>
+            <option>CSE</option>
+            <option>IT</option>
+            <option>ECE</option>
+            <option>Mechanical</option>
+            <option>Civil</option>
         </select>
 
-        <select id="filterSection">
-
-            <option value="all">All Sections</option>
-
-            <option>A</option>
-            <option>B</option>
-            <option>C</option>
-
+        <label>Semester</label>
+        <select id="semester">
+            <option value="">Select Semester</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
         </select>
 
-        <button onclick="filterTimetable()">
-            Search
-        </button>
+        <label>Exam Date</label>
+        <input type="date" id="examDate">
+
+        <label>Exam Start Time</label>
+        <input type="time" id="startTime">
+
+        <label>Exam End Time</label>
+        <input type="time" id="endTime">
+
+        <label>Number of Students</label>
+        <input type="number" id="students" placeholder="Enter number of students">
+
+        <button onclick="addExam()">Add Exam</button>
 
     </div>
 
+    <h2>Exam Timetable</h2>
+
     <table>
-
         <thead>
-
             <tr>
-
-                <th>Sr. No.</th>
                 <th>Subject</th>
+                <th>Branch</th>
+                <th>Semester</th>
                 <th>Date</th>
-                <th>Time</th>
-                <th>Year</th>
-                <th>Section</th>
+                <th>Start</th>
+                <th>End</th>
+                <th>Students</th>
                 <th>Room</th>
                 <th>Action</th>
-
             </tr>
-
         </thead>
 
-        <tbody id="examTable">
-
-        </tbody>
-
+        <tbody id="examTable"></tbody>
     </table>
 
-</section>
+</div>
 
 <script src="script.js"></script>
 
